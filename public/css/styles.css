@@ -343,3 +343,13 @@ body .fc-theme-standard td,
   padding: 8px 16px;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1280px) {
+    .ml-8 {
+        margin-left: 1rem;
+    }
+
+    .font-normal, .font-bold {
+        font-size: 12px;
+    }
+}

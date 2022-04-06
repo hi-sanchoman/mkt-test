@@ -278,12 +278,14 @@ class RealizatorsController extends Controller
 		$nak = Nak::find($id);
 		$grocery = Grocery::where('nak_id',$nak->id)->get();
 
-		if($nak->consegnation == 2){
-			$consegnation = "Консегнация МКТ";
-		}
-		else{
+		if($nak->consegnation == 1) {
+			$consegnation = "Консегнация ТОО Тест";
+		} else if ($nak->consegnation == 2) {
 			$consegnation =	"Консегнация";
+		} else {
+			$consegnation = 'Оплата наличными';
 		}
+		
 		$phpWord = new \PhpOffice\PhpWord\PhpWord();
 
 		$paper = new \PhpOffice\PhpWord\Style\Paper();

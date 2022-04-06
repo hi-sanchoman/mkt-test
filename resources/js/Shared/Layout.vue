@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="w-full  md:py-0 md:px-0 text-sm md:text-md flex justify-start items-center hidden sm:block">
+                <div class="w-full  md:py-0 md:px-0 text-sm md:text-md flex justify-start items-center hidden sm:block mr-8">
                     <div class="mt-1">
                         <!-- <div class="relative">
                             <input class="bg-indigo-500 w-64 rounded-full pl-3 pr-10 py-1 text-white text-sm leading-5" /> 
@@ -169,7 +169,7 @@
 
                 
 
-                <dropdown class="mt-1 w-48 hidden sm:block" placement="bottom-end">
+                <dropdown class="mt-1 hidden sm:block" placement="bottom-end">
                     <div class="text-gray-700 group-hover:text-indigo-600 focus:text-indigo-600  whitespace-nowrap">
 
                         <img :src="'/' + $page.props.auth.user.photo_path" class="h-10 w-10 rounded-full" />

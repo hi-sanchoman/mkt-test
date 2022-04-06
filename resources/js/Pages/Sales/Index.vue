@@ -68,7 +68,7 @@
             <tr>
                 <td colspan="4"></td>
                 <td colspan="4"></td>
-                <td>Мажит</td>
+                <td>Владелец 1</td>
                 <td><input type="number" name="majit" v-model="majit"></td>
             </tr>
             <!-- <tr>
@@ -88,9 +88,9 @@
                 <td colspan="4"></td>
                 <td colspan="4"></td>
                 <td>к оплате</td>
-                <td><div v-if="getRealizationSum()">{{(totalSum()-getRealizationSum()-majit-sordor)-((totalSum()-getRealizationSum())/10)}}</div>
+                <td><div v-if="getRealizationSum()">{{(totalSum()-getRealizationSum()-majit)-((totalSum()-getRealizationSum())/10)}}</div>
                     <div v-else>
-                        {{totalSum()-(totalSum()/10)-(majit)-(sordor)}}
+                        {{totalSum()-(totalSum()/10)-(majit)}}
                     </div>
                 </td>
             </tr>
@@ -242,7 +242,7 @@
                 <tr>
                     <td colspan="4"></td>
                     <td colspan="4"></td>
-                    <td>Мажит</td>
+                    <td>Владелец 1</td>
                     <td><input type="number" name="majit" v-model="majit"></td>
                 </tr>
                 <!-- <tr>
@@ -262,9 +262,9 @@
                     <td colspan="4"></td>
                     <td colspan="4"></td>
                     <td>к оплате</td>
-                    <td><div v-if="getRealizationSum()">{{(totalSum()-getRealizationSum()-majit-sordor)-((totalSum()-getRealizationSum())/10)}}</div>
+                    <td><div v-if="getRealizationSum()">{{(totalSum()-getRealizationSum()-majit)-((totalSum()-getRealizationSum())/10)}}</div>
                         <div v-else>
-                            {{totalSum()-(totalSum()/10)-(majit)-(sordor)}}
+                            {{totalSum()-(totalSum()/10)-(majit)}}
                         </div>
                     </td>
                 </tr>
@@ -779,7 +779,7 @@ export default {
             time: true,
             from: new Date(),
             to: new Date(),
-            //majit: 0,
+            // majit: 0,
             //sordor: 0,
             moment: moment,
             columns:[{

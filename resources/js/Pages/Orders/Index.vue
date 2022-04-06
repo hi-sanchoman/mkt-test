@@ -518,7 +518,7 @@
                     <input type="text" list="option1" v-model="option" class="border-b-2" label="опция" placeholder="консегнация" />
                     <datalist id="option1">
                         <option>Консегнация</option>
-                        <option>Консегнация МКТ</option>
+                        <option>Консегнация ТОО Тест</option>
                         <option>Оплата наличными</option>
                     </datalist>
 
@@ -641,7 +641,7 @@ export default {
             empty:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
             shop:'',
             option:'',
-            company: 'СПК Майлыкент-Сут',
+            company: 'ТОО Тест',
             moment: moment,
             from: new Date(),
             to: new Date(),
@@ -823,7 +823,7 @@ export default {
                 });
 
                 var myoption = 2;
-                if (this.option == "Консегнация МКТ"){
+                if (this.option == "Консегнация ТОО Тест"){
                     myoption = 1;
                 } else if (this.option == 'Оплата наличными') {
                     myoption = 3;
